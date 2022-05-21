@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    font-family: 'Akshar', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-card{
+    position: fixed;
+    width: 600px;
+    text-align: center;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 10px 15px rgb(42, 42, 42);
+}
+
+.card-header{
+    background-color: blueviolet;
+    padding: 6vh 4vh ;  
+}
+
+.dcpp{
+    display: inline-block;
+    padding: 2vh;
+    margin: auto;
+    border-radius: 50%;
+    height: 18vh;
+    width: 18vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.dcpp:hover  {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    opacity: 2;
+}
+
+.dc-yazi{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 4vh;
+    border-radius: 10px;
+    font-size: 32px;
+    color: black;
+    opacity: 0.7;
+}
+
+.dc-yazi:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    opacity: 2;
+}
+
+.dc-yazi:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: gold;
+    transition: width 0.25s ease-out;
+}
+
+.dc-yazi:hover::before{
+    width: 100%;
+    
+}
+
+.dc-box{
+    background-color: #565758;
+    position: relative;
+    border-radius: 15px;
+    align-items: center;
+    bottom: 4vh;
+    padding: 10px 10px; 
+    width: 500px;
+    left: 18px;
+    box-shadow: 10px 10px rgb(42, 42, 42);
+}
+
+.dc-aktif{
+    background-color:  	#2E8B57;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 264px;
+    bottom: 53px;
+
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sm a{
+    position: relative;
+   color: #757a80; 
+   width: 100px;
+   font-size: 40px;
+   bottom: 3vh;
+   opacity: 0.8;
+   text-decoration: none;
+}
+
+
+
+.sm a:hover  {
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+    opacity: 2;
+}
+
+.projects{
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 10px 10px rgb(42, 42, 42);
+    overflow: hidden;
+}
+
+
+.proje-title{
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.proje-write{
+    position: relative;
+    text-align: center;
+    right: -0.2vh;
+    bottom: -0.2vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsive Start here */
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+    *{
+        box-sizing: border-box;
+        border: 0;
+        margin: 0;
+        font-family: 'Akshar', sans-serif;
+    }
+    
+    body{
+        height: 100vh;
+        display: flex;
+        background-color: aquamarine;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile-card{
+        position: fixed;
+        width: 270px;
+        height: 600px;
+        text-align: center;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 5px 10px rgb(42, 42, 42);
+    
+    }
+    
+    .card-header{
+        background-color: blueviolet;
+        padding: 3vh 2vh ;  
+    }
+    
+    .dcpp{
+        display: inline-block;
+        padding: 2vh;
+        margin: auto;
+        border-radius: 50%;
+        height: 20vh;
+        width: 20vh;
+        position: relative;
+        align-items: center;
+        opacity: 0.9;
+    }
+    
+    .dcpp:hover  {
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        opacity: 2;
+    }
+    
+    .dc-yazi{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        bottom: 4vh;
+        border-radius: 10px;
+        font-size: 32px;
+        color: black;
+        opacity: 0.7;
+    }
+    
+    .dc-yazi:hover{
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        opacity: 2;
+    }
+    
+    .dc-yazi:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: gold;
+        transition: width 0.25s ease-out;
+    }
+    
+    .dc-yazi:hover::before{
+        width: 100%;
+        
+    }
+    
+    .dc-box{
+        background-color: #565758;
+        position: relative;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        bottom: -1vh;
+        padding: 5px 5px; 
+        width: 200px;
+        left: 18px;
+        box-shadow: 5px 5px rgb(42, 42, 42);
+    }
+    
+    .dc-aktif{
+        background-color:  	#2E8B57;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        position: relative;
+        left: 110px;
+        bottom: 40px;
+    
+    }
+    
+    .sm{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .sm a{
+        position: relative;
+       color: #757a80; 
+       width: 50px;
+       font-size: 40px;
+       justify-content: center;
+       align-items: center;
+       bottom: -1vh;
+       opacity: 0.8;
+       text-decoration: none;
+    }
+    
+    
+    
+    .sm a:hover  {
+        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+        opacity: 2;
+    }
+    
+    .projects{
+        position: relative;
+        background-color: aliceblue;
+        border-radius: 15px;
+        height: 280px;
+        box-shadow: 5px 5px rgb(42, 42, 42);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    
+    .proje-title{
+        position: relative;
+        justify-content: left;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .proje-write{
+        position: relative;
+        text-align: center;
+        right: -0.2vh;
+        bottom: -0.2vh;
+        font-weight: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1199px){
+
+}
+
+
+
